@@ -1,3 +1,5 @@
+console.groupCollapsed('Masyvų teorija')
+
 // Masyvai / arrays
 const numsArray = [5, 500, -5, 57.5, 4534, 4444]
 // Indeksai        0   1    2    3     4    5
@@ -111,5 +113,63 @@ console.log(slicedCountries11)
 const slicedCountries12 = countries.slice(4, 2)
 console.log(slicedCountries12)
 
-const data = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+console.groupEnd()
 
+console.groupCollapsed('Pirmos užduoties 29 ir 30 dalies sprendimas')
+
+const arr = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
+console.log(arr)
+
+// 2.29. Gauti pirmus penkis ir paskutinius šešis masyvo narius. Šiuos narius gauti viename masyve. Reikės atlikti daugiau veiksmų nei prieš tai uždaviniuose.
+
+// 1. Pirmi 5 nariai
+const task229first = arr.slice(0, 5)
+console.log(task229first)
+
+// 2. Paskutiniai 6 nariai
+const task229last = arr.slice(-6)
+console.log(task229last)
+
+// 3. Bendras masyvas
+// const task229all = task229first.concat(task229last)
+// const task229all = [task229first, task229last].flat()
+const task229all = [...task229first, ...task229last]
+console.log(task229all)
+
+// 2.30. Gauti masyvo narius nuo 3 iki 5 ir nuo 15 iki 17. Šiuos narius gauti viename masyve. Reikės atlikti daugiau veiksmų nei prieš tai uždaviniuose.
+
+const task230first = arr.slice(2, 5)
+console.log(task230first)
+
+const task230last = arr.slice(14, 17)
+console.log(task230last)
+
+// const task230all = task230first.concat(task230last)
+// const task230all = [task230first, task230last].flat()
+const task230all = [...task230first, ...task230last]
+console.log(task230all)
+
+console.groupEnd()
+
+
+// SPLICE - modifikuoja (mutuoja) originalų masyvą
+let nums = [  1  ,   2  ,   3  ,   4  ,   5  ,   6  ,   7  ,   10];
+//         0     1      2      3      4      5      6      7     8
+//        -8    -7     -6     -5     -4     -3     -2     -1
+
+console.log(nums)
+
+// const splicedNums = nums.splice(2)
+// const splicedNums = nums.splice(0, 2)
+// const splicedNums = nums.splice(2, 1)
+// const splicedNums = nums.splice(2, 3)
+// const splicedNums = nums.splice(-1)
+// const splicedNums = nums.splice(-3, 2)
+// const splicedNums = nums.splice(-3, 2, 2)
+// const splicedNums = nums.splice(3, 2, 'Trys')
+// const splicedNums = nums.splice(2, 1, 2.5)
+// const splicedNums = nums.splice(2, 0, 2.5)
+const splicedNums = nums.splice(2, 0, 2.5, 2.7, 2.8)
+
+console.log(splicedNums)
+console.log(nums)

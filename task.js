@@ -1,3 +1,52 @@
+const orgData = [4, 5, -5556, 155, 640, '15x', 6789, -5564, 478, 654, 'obuolys', 789, -51, 55, -222, 0, -357, -56, 'trylika', 444, 7778, 4154, 4751]
+
+// 1.1.
+orgData.shift()
+// 1.2.
+orgData.pop()
+// 1.3.
+const middleNum = Math.floor(orgData.length / 2)
+// console.log(middleNum)
+orgData.splice(middleNum, 1)
+// 1.4.
+orgData.splice(-2, 1)
+// 1.5.
+orgData.splice(1, 1)
+// 1.6.
+orgData.splice(7, 2)
+// 1.7.
+orgData.splice(-4, 3)
+// 1.8.
+orgData.splice(2, 1, 888)
+// 1.9.
+orgData.splice(9, 1, 33, 789, 6543)
+// 1.10.
+orgData.pop()
+orgData.push(321, 654, 987)
+// 1.11.
+orgData.splice(1, 0, 11)
+// 1.12.
+orgData.splice(13, 0, 1)
+// 1.13.
+orgData.splice(-1, 0, -1)
+// 1.14.
+orgData.unshift(1, 2, 3)
+// 1.15.
+orgData.push(-333, -321, -312)
+// 1.16.
+orgData.splice(middleNum, 0, 0)
+// 1.17.
+orgData.shift()
+// 1.18.
+orgData.pop()
+// 1.19.
+orgData.unshift('start')
+// 1.20.
+orgData.push('end')
+
+
+console.log(orgData)
+
 const data = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
 
 console.log(data)
