@@ -13,9 +13,9 @@ orgData.splice(-2, 1)
 // 1.5.
 orgData.splice(1, 1)
 // 1.6.
-orgData.splice(7, 2)
+orgData.splice(6, 2)
 // 1.7.
-orgData.splice(-4, 3)
+orgData.splice(-6, 3)
 // 1.8.
 orgData.splice(2, 1, 888)
 // 1.9.
@@ -34,7 +34,7 @@ orgData.unshift(1, 2, 3)
 // 1.15.
 orgData.push(-333, -321, -312)
 // 1.16.
-orgData.splice(middleNum, 0, 0)
+orgData.splice(orgData.length / 2, 0, 0)
 // 1.17.
 orgData.shift()
 // 1.18.
