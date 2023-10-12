@@ -246,7 +246,7 @@ const filteredNums59 = arr.filter(num => typeof num === 'string' && num.includes
 console.log(filteredNums59)
 
 // 3.62.
-const filteredNums60 = arr.filter(num => typeof num === 'string' && num.includes('t' > 1))
+const filteredNums60 = arr.filter(num => typeof num === 'string' && num.split('t').length > 2)
 console.log(filteredNums60)
 
 // 3.63.
